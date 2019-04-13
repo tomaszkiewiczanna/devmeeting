@@ -1,17 +1,24 @@
 <template>
   <div class="home">
     <h1>HOME!</h1>
+    <BaseInput />
+    <BaseButton v-on:click.native="clickButton" :loading="loading"/>
   </div>
 </template>
 
 <script>
-// @ is an alias to /src
-import HelloWorld from '@/components/HelloWorld.vue'
-
 export default {
   name: 'home',
-  components: {
-    HelloWorld
-  }
+  data() {
+    return {
+      loading: false
+    }
+  },
+  methods: {
+    clickButton() {
+      console.log('dzialam')
+      this.loading = !this.loading
+    }
+  },
 }
 </script>
