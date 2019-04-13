@@ -11,4 +11,20 @@ export default {
   name: 'Navigation'
 }
 </script>
+<style lang="scss">
+.nav {
+  a {
+    font-weight: 600;
+    color: rgb(140, 180, 153);
+    text-decoration: none;
+    transition: 0.3s;
+    margin-top: 30px;
+    font-size: 20px;
+    &:hover {
+      color: rgb(106, 107, 202);
+    }
+  }
+}
+</style>
+
 

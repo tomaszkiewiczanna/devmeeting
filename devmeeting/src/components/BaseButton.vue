@@ -1,7 +1,6 @@
 <template>
   <button :disabled="loading" class="base-button">
-    <span v-if="loading"><img src="/img/rolling.svg" alt=""></span>
-    <span v-else>Click me!</span>
+    <slot/>
   </button>
 </template>
 <script>
