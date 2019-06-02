@@ -18,6 +18,8 @@
 </template>
 
 <script>
+import { mapGetters, mapActions } from 'vuex';
+
 export default {
   name: 'home',
   data() {
@@ -29,6 +31,12 @@ export default {
     clickButton() {
       this.loading = !this.loading
     }
+  },
+  computed: {
+    ...mapGetters('User', ['User']),
+  },
+  created() {
+    this.getSettings();
   },
 }
 </script>

@@ -29,6 +29,7 @@ export default {
 }
 </script>
 <style lang="scss">
+
 .vote-options {
   width: 100%;
   display: flex;
